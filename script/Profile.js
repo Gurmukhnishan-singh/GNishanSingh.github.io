@@ -1,5 +1,5 @@
 $(function() {
-    $('#body').terminal("Profile", {
+    $('body').terminal("Profile", {
        greetings: "Gurmukhnishan Singh"
     });
  });
