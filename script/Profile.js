@@ -1,3 +1,5 @@
 $(function() {
-    $('#terminal');
+    $('#terminal').terminal("Profile", {
+       greetings: "Gurmukhnishan Singh"
+    });
  });
