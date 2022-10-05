@@ -1,5 +1,35 @@
 $(function() {
-    $('body').terminal("Profile", {
+    $('body').terminal({
+        whoami: function (){
+            this.echo(`
+
+[[b;#00FF00;]Details about me:]
+----------------
+ [[b;#0000FF;]Name]                  : Gurmukhnishan Singh
+ [[b;#0000FF;]Current Designation]   : Technical Lead (Detection Engineering)
+ [[b;#0000FF;]Current Employer]      : Securonix
+ [[b;#0000FF;]Total Experience]      : 9 years and 3 month
+ [[b;#0000FF;]Previous Employers]    :
+                       - Netsurion Technologies PVT. LTD. (6 years and 6 months) (June 2015 - November 2021)
+                       - Axon Network Solution PVT. LTD. (1 year and 1 month) (December 2013 - June 2015)
+                       - IT Support Desk Limited. (6 months) (june 2013 - november 2013)
+ [[b;#0000FF;]Education]             : Bachelor of Engineering (2008-2012)
+ [[b;#0000FF;]Certification]         :
+                       - [[!;;;;https://mad-certified.mitre-engenuity.org/02aa55f6-287a-4299-8d47-6cd2c2c2bfae]ATT&CK Cyber Threat Intelligence Certification]
+                       - [[!;;;;https://mad-certified.mitre-engenuity.org/6245378c-8b5d-4888-9246-e0b1f801590d]ATT&CK Security Operations Center Assessment Certification]
+                       - [[!;;;;https://securonixacademy.northpass.com/courses/fefba1a5-03d0-425e-a77c-c4b9f8f4e26a/certificate]Certified SNYPR Content Developer]
+                       - [[!;;;;https://securonixacademy.northpass.com/courses/51d09917-09e5-41ef-8bc1-97a24ff78f52/certificate]Certified SNYPR Data Integrator]
+                       - [[!;;;;https://securonixacademy.northpass.com/courses/dcd6cbc2-727b-47b0-b585-3ad3fffc2f74/certificate]Certified SNYPR Security Analyst] 
+ [[b;#0000FF;]Project]               :
+                       - [[!;;;;https://github.com/GNishanSingh/Optm_ParserEngine]Optimized Parser Engine]
+                         (Python) (PIP Module)
+                       - [[!;;;;https://serverlessrepo.aws.amazon.com/applications/us-east-1/655631112574/ETS-AWS-Logforwarder]AWS Connector with SIEM]
+                       - [[!;;;;https://www.netsurion.com/knowledge-packs/microsoft-azure]Azure Connector with SIEM]
+                       - [[!;;;;https://www.netsurion.com/capabilities/mitre-attack]MITRE ATT&CK Integration with EventTracker]
+                       - [[!;;;;https://www.netsurion.com/eventtracker-support/software-updates/v9x/et93u21-056]Vulnerability Management Integration with EventTracker]
+            `);
+        }
+    }, {
        greetings: 
        `
   ▄▄ • ▄• ▄▌▄▄▄  • ▌ ▄ ·. ▄• ▄▌▄ •▄  ▄ .▄ ▐ ▄ ▪  .▄▄ ·  ▄ .▄ ▄▄▄·  ▐ ▄     .▄▄ · ▪   ▐ ▄  ▄▄ •  ▄ .▄
@@ -7,47 +37,20 @@ $(function() {
  ▄█ ▀█▄█▌▐█▌▐▀▀▄ ▐█ ▌▐▌▐█·█▌▐█▌▐▀▀▄·██▀▐█▐█▐▐▌▐█·▄▀▀▀█▄██▀▐█▄█▀▀█ ▐█▐▐▌    ▄▀▀▀█▄▐█·▐█▐▐▌▄█ ▀█▄██▀▐█
  ▐█▄▪▐█▐█▄█▌▐█•█▌██ ██▌▐█▌▐█▄█▌▐█.█▌██▌▐▀██▐█▌▐█▌▐█▄▪▐███▌▐▀▐█ ▪▐▌██▐█▌    ▐█▄▪▐█▐█▌██▐█▌▐█▄▪▐███▌▐▀
  ·▀▀▀▀  ▀▀▀ .▀  ▀▀▀  █▪▀▀▀ ▀▀▀ ·▀  ▀▀▀▀ ·▀▀ █▪▀▀▀ ▀▀▀▀ ▀▀▀ · ▀  ▀ ▀▀ █▪     ▀▀▀▀ ▀▀▀▀▀ █▪·▀▀▀▀ ▀▀▀ ·
-[[b;#ffffff;]011101000111][[b;#000000;]0011010100011010][[b;#ffffff;]0110000101]
-[[b;#ffffff;]00001100][[b;#000000;]11101111000111110100101][[b;#ffffff;]1100111]
-[[b;#ffffff;]010100][[b;#000000;]0011111001100100110001001101][[b;#ffffff;]1001]
-[[b;#ffffff;]0010][[b;#000000;]0000110001111101011000011011101][[b;#ffffff;]101]
-[[b;#ffffff;]010][[b;#000000;]1001110110010111110111][[b;#ffffff;]00000100][[b;#000000;]010][[b;#ffffff;]10]
-[[b;#ffffff;]01][[b;#000000;]10110011011010101111][[b;#ffffff;]1010100111000110]
-[[b;#ffffff;]00][[b;#000000;]10001101000101111][[b;#ffffff;]1101111000101110001]
-[[b;#ffffff;]1][[b;#000000;]1000101011011010][[b;#ffffff;]11010][[b;#000000;]101][[b;#ffffff;]0000111011110]
-[[b;#ffffff;]0][[b;#000000;]1000010011111][[b;#ffffff;]011][[b;#000000;]101001010101][[b;#ffffff;]100111000]
-[[b;#ffffff;]10][[b;#000000;]100100011][[b;#ffffff;]1111][[b;#000000;]11110001111110][[b;#ffffff;]101000101]
-[[b;#ffffff;]11][[b;#000000;]00011101][[b;#ffffff;]1100][[b;#000000;]1011111110010111][[b;#ffffff;]11011][[b;#000000;]1][[b;#ffffff;]10]
-[[b;#ffffff;]101][[b;#000000;]1][[b;#ffffff;]1][[b;#000000;]00111][[b;#ffffff;]0011100][[b;#000000;]0100110101100][[b;#ffffff;]0110][[b;#000000;]000][[b;#ffffff;]0]
-[[b;#ffffff;]0000][[b;#000000;]1010111][[b;#ffffff;]001111011][[b;#000000;]01001][[b;#ffffff;]001][[b;#000000;]0][[b;#ffffff;]01011][[b;#000000;]00][[b;#ffffff;]00]
-[[b;#ffffff;]1000][[b;#000000;]11000100][[b;#ffffff;]00111010111010001010010100]      Use following command for getting details about me:
-[[b;#ffffff;]1110][[b;#000000;]011010011][[b;#ffffff;]0001101001111111100110011]      ---------------------------------------------------
-[[b;#ffffff;]0111][[b;#000000;]0001010110][[b;#ffffff;]11010001011110][[b;#000000;]1][[b;#ffffff;]10][[b;#000000;]11][[b;#ffffff;]10000]      | [[b;#0000FF;]Command]   |          [[b;#0000FF;]Description]                |
-[[b;#ffffff;]10110][[b;#000000;]0110000000][[b;#ffffff;]100111110000][[b;#000000;]1111001][[b;#ffffff;]1100]      ---------------------------------------------------
-[[b;#ffffff;]0101110][[b;#000000;]10001111110][[b;#ffffff;]00010001010][[b;#000000;]011][[b;#ffffff;]110000]      | [[b;#0000FF;]whoami]     | To read something about me         |
-[[b;#ffffff;]0010110][[b;#000000;]0000110001010][[b;#ffffff;]00][[b;#000000;]0100110011][[b;#ffffff;]0][[b;#000000;]00][[b;#ffffff;]011]      | [[b;#0000FF;]about]      | To read info about this site       |
-[[b;#ffffff;]1001001][[b;#000000;]0100100110111010110110110][[b;#ffffff;]0][[b;#000000;]00000][[b;#ffffff;]]      | [[b;#0000FF;]blogs]      | To Read about my blogs             |
-[[b;#ffffff;]110110][[b;#000000;]011101110111110011100010][[b;#ffffff;]11][[b;#000000;]000100][[b;#ffffff;]]      | [[b;#0000FF;]experience] | To Read about my work experience   |
-[[b;#ffffff;]01010][[b;#000000;]00010011100000111111111101][[b;#ffffff;]000][[b;#000000;]1111][[b;#ffffff;]]      | [[b;#0000FF;]projects]   | To Read about project i have done  |
-[[b;#ffffff;]1100][[b;#000000;]0001011100101001000111111001010010][[b;#ffffff;]]      | [[b;#0000FF;]help]       | To get command helps               |
-[[b;#ffffff;]111][[b;#000000;]111001111001100101101011111011000000][[b;#ffffff;]]      ---------------------------------------------------
- 
+ [[!;;;;https://github.com/GNishanSingh]GitHub] | [[!;;;;https://twitter.com/g_nishan_singh]Twitter] | [[!;;;;https://www.linkedin.com/in/gurmukhnishan-singh/]LinkedIn]
+ ---------------------------
+
+Use following command for getting details about me:
+---------------------------------------------------
+| [[b;#0000FF;]Command]   |          [[b;#0000FF;]Description]                |
+---------------------------------------------------
+| [[b;#0000FF;]whoami]     | To read something about me         |
+| [[b;#0000FF;]blogs]      | To Read about my blogs             |
+| [[b;#0000FF;]experience] | To Read about my work experience   |
+| [[b;#0000FF;]projects]   | To Read about project i have done  |
+| [[b;#0000FF;]help]       | To get command helps               |
+---------------------------------------------------
 `,
-    prompt:'[[;red;]g_nishan_singh] >',
-    help: function(){
-        this.echo(`
-        Use following command for getting details about me:
-        ------------------------------------------------
-        | [[b;#0000FF;]Command]   |          [[b;#0000FF;]Description]             |   
-        ------------------------------------------------
-        | [[b;#0000FF;]whoami]    | To read something about me       |
-        | [[b;#0000FF;]about]     | To read info about this site     |
-        | [[b;#0000FF;]blogs]     | To Read about my blogs           |
-        | [[b;#0000FF;]experience]| To Read about my work experience |
-        | [[b;#0000FF;]projects]  | To Read about project i have done|
-        | [[b;#0000FF;]help]      | To get command helps             |
-        ------------------------------------------------
-        `)
-    }
+    prompt:'[[;red;]g_nishan_singh] >'
     });
  });
