@@ -5,16 +5,48 @@
         max-width: 100%;
         overflow: scroll;
     }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: blue;
+      shape-rendering: crispEdges;
+    }
+
+    .axis text {
+      font-family: var(--font,monospace);
+      stroke: red;
+      font-size: 8px;
+    }
+
+    .timeline-label {
+      font-family: var(--font,monospace);   
+      stroke: rgb(181, 31, 31);
+      font-size: 10px;
+      font-weight: 100;
+    }
+
+    #timeline2 .axis {
+      transform: translate(0px,40px);
+      -ms-transform: translate(0px,40px); /* IE 9 */
+      -webkit-transform: translate(0px,40px); /* Safari and Chrome */
+      -o-transform: translate(0px,40px); /* Opera */
+      -moz-transform: translate(0px,40px); /* Firefox */
+    }
+    
+    .coloredDiv {
+      height:20px; width:50px; float:left;
+    }
 </style>
 
 <head>
     <script src="script/jquery-3.3.1.min.js"></script>
     <script src="script/terminal/jquery.terminal-2.34.0.min.js"></script>
     <script src="script/terminal/ascii_table.js"></script>
-    <script src="script/d3.v7.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/jquery.terminal.min.css" />
+    <script src="script/d3-timeline.js"></script>
     <script src="script/Profile.js"></script>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body class="terminal">
