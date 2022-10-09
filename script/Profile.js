@@ -91,7 +91,6 @@ Use following command for getting details about me:
 | [[b;#0000FF;]Command]   |          [[b;#0000FF;]Description]                |
 ---------------------------------------------------
 | [[b;#0000FF;]whoami]     | To read something about me         |
-| [[b;#0000FF;]blogs]      | To Read about my blogs             |
 | [[b;#0000FF;]experience] | To Read about my work experience   |
 | [[b;#0000FF;]projects]   | To Read about project i have done  |
 | [[b;#0000FF;]help]       | To get command helps               |
